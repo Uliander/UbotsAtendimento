@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "2cc1ff67-0abd-4fea-b54c-70072d2ac2e9",
+		"name": "UBOTS - Atendimento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16642584"
+	},
+	"item": [
+		{
+			"name": "Atender",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"apiOrigem\": \"sboot-pgan-base-atom-envia-email\",\r\n  \"apiProcesso\": \"teste\",\r\n  \"codErro\": \"123\",\r\n  \"desErro\": \"Descrição teste erro\",\r\n  \"emailAssunto\": \"Email via API *** PGAN *** (Produção)\",\r\n  \"emailDestinatario\": \"SquadJornadaDoColaborador@bancovotorantim.onmicrosoft.com\",\r\n  \"emailRemetente\": \"market.alima@bv.com.br\",\r\n  \"processamento\": \"Processamento via Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sboot-pgan-base-atom-envia-email.app.bvnet.bv/v1/envia-email",
+					"protocol": "https",
+					"host": [
+						"sboot-pgan-base-atom-envia-email",
+						"app",
+						"bvnet",
+						"bv"
+					],
+					"path": [
+						"v1",
+						"envia-email"
+					]
+				},
+				"description": "CAAPI Simular"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Clientes Atendidos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"apiOrigem\": \"sboot-pgan-base-atom-envia-email\",\r\n  \"apiProcesso\": \"teste\",\r\n  \"codErro\": \"123\",\r\n  \"desErro\": \"Descrição teste erro\",\r\n  \"emailAssunto\": \"Email via API *** PGAN *** (Produção)\",\r\n  \"emailDestinatario\": \"SquadJornadaDoColaborador@bancovotorantim.onmicrosoft.com\",\r\n  \"emailRemetente\": \"market.alima@bv.com.br\",\r\n  \"processamento\": \"Processamento via Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atendimento/{'Patricia'}/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atendimento",
+						"{'Patricia'}",
+						"clientes"
+					]
+				},
+				"description": "CAAPI Simular"
+			},
+			"response": []
+		},
+		{
+			"name": "Finalizar Atendimento",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"apiOrigem\": \"sboot-pgan-base-atom-envia-email\",\r\n  \"apiProcesso\": \"teste\",\r\n  \"codErro\": \"123\",\r\n  \"desErro\": \"Descrição teste erro\",\r\n  \"emailAssunto\": \"Email via API *** PGAN *** (Produção)\",\r\n  \"emailDestinatario\": \"SquadJornadaDoColaborador@bancovotorantim.onmicrosoft.com\",\r\n  \"emailRemetente\": \"market.alima@bv.com.br\",\r\n  \"processamento\": \"Processamento via Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atendimento/{'Patricia'}/finalizar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atendimento",
+						"{'Patricia'}",
+						"finalizar",
+						"1"
+					]
+				},
+				"description": "CAAPI Simular"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Clientes na Fila",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"apiOrigem\": \"sboot-pgan-base-atom-envia-email\",\r\n  \"apiProcesso\": \"teste\",\r\n  \"codErro\": \"123\",\r\n  \"desErro\": \"Descrição teste erro\",\r\n  \"emailAssunto\": \"Email via API *** PGAN *** (Produção)\",\r\n  \"emailDestinatario\": \"SquadJornadaDoColaborador@bancovotorantim.onmicrosoft.com\",\r\n  \"emailRemetente\": \"market.alima@bv.com.br\",\r\n  \"processamento\": \"Processamento via Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atendimento/{'Patricia'}/fila",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atendimento",
+						"{'Patricia'}",
+						"fila"
+					]
+				},
+				"description": "CAAPI Simular"
+			},
+			"response": []
+		}
+	]
+}
